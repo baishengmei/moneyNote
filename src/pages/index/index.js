@@ -1,24 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Button } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
-// import { bindActionCreators } from 'redux'
 import './index.css'
 
 import { add, minus, asyncAdd } from '../../actions/counter'
-// import * as Actions from '../../actions/counter'
-
-// function mapStateToProps(state) {
-//   return {
-//     counter: state.counter.toJS()
-//   }
-// }
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     ...bindActionCreators(Actions, dispatch)
-//   }
-// }
-
-// @connect(mapStateToProps, mapDispatchToProps)
 
 @connect(({ counter }) => ({
   counter
